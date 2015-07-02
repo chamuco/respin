@@ -1,0 +1,10 @@
+Package: respin-gtk
+Version: 3.0.4-1
+Section: Desktop
+Priority: optional
+Architecture: all
+Depends: python, python-glade2, python-vte, plymouth-x11,respin
+Maintainer: Respin Team <aicra@faqlinux.com>
+Description: Ubuntu and variant system remaster. This is the alternate gtk gui for respin written in pygtk. For more information, please visit http://www.linuxrespin.com
+Installed-size: 299
+Homepage: http://www.linuxrespin.com/

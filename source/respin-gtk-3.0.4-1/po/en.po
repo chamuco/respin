@@ -1,0 +1,456 @@
+#: src/respin-gtk.py:755
+msgid ""
+msgstr ""
+"Project-Id-Version: respin\n"
+"Report-Msgid-Bugs-To: tb6517@yahoo.com\n"
+"POT-Creation-Date: 2011-11-26 01:24+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Krasimir S. Stefanov <lokiisyourmaster@gmail.com>\n"
+"Language-Team: SKSS <lokiisyourmaster@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: src/respin-gtk.py:69
+msgid ""
+"It is necessary to close all other linux and unmount any network shares "
+"while running Respin Backup. Please do so now and then click OK when "
+"you are ready to continue."
+msgstr ""
+"It is necessary to close all other linux and unmount any network shares "
+"while running Respin Backup. Please do so now and then click OK when "
+"you are ready to continue."
+
+#: src/respin-gtk.py:85
+msgid ""
+"You have selected Backup Mode. Do not interrupt this process. Click OK to "
+"Start the Backup LiveCD/DVD process."
+msgstr ""
+"You have selected Backup Mode. Do not interrupt this process. Click OK to "
+"Start the Backup LiveCD/DVD process."
+
+#: src/respin-gtk.py:93 src/respin-gtk.py:113
+#: src/respin-gtk.py:154
+#, python-format
+msgid ""
+"Your %(iso)s and %(iso)s.md5 files are ready in %(dir)s. It is recommended "
+"to test it in a virtual machine or on a rewritable cd/dvd to ensure it works "
+"as desired. Click on OK to return to the main menu."
+msgstr ""
+"Your %(iso)s and %(iso)s.md5 files are ready in %(dir)s. It is recommended "
+"to test it in a virtual machine or on a rewritable cd/dvd to ensure it works "
+"as desired. Click on OK to return to the main menu."
+
+#: src/respin-gtk.py:96 src/respin-gtk.py:115
+#: src/respin-gtk.py:133 src/respin-gtk.py:156
+msgid "The process was interrupted!"
+msgstr "The process was interrupted!"
+
+#: src/respin-gtk.py:104
+msgid ""
+"You have selected Dist Mode. Click OK to Start the Distributable LiveCD/DVD "
+"process."
+msgstr ""
+"You have selected Dist Mode. Click OK to Start the Distributable LiveCD/DVD "
+"process."
+
+#: src/respin-gtk.py:123
+msgid ""
+"You have selected Dist CDFS Mode. Click OK to Start the Distributable LiveCD/"
+"DVD filesystem build process."
+msgstr ""
+"You have selected Dist CDFS Mode. Click OK to Start the Distributable LiveCD/"
+"DVD filesystem build process."
+
+#: src/respin-gtk.py:131
+#, python-format
+msgid ""
+"Your livecd filesystem is ready in %s. You can now add files to the cd and "
+"then run the Distiso option when you are done. Click on OK to return to the "
+"main menu."
+msgstr ""
+"Your livecd filesystem is ready in %s. You can now add files to the cd and "
+"then run the Distiso option when you are done. Click on OK to return to the "
+"main menu."
+
+#: src/respin-gtk.py:143
+msgid "You have selected Dist ISO Mode. Click OK to create the iso file."
+msgstr "You have selected Dist ISO Mode. Click OK to create the iso file."
+
+#: src/respin-gtk.py:148
+msgid ""
+"The livecd filesystem does not exist. Click OK to go back to the main menu "
+"and try the normal Dist mode or the Dist CDFS again."
+msgstr ""
+"The livecd filesystem does not exist. Click OK to go back to the main menu "
+"and try the normal Dist mode or the Dist CDFS again."
+
+#: src/respin-gtk.py:164
+msgid ""
+"This will remove all the files from the temporary directory. Click OK to "
+"proceed."
+msgstr ""
+"This will remove all the files from the temporary directory. Click OK to "
+"proceed."
+
+#: src/respin-gtk.py:168
+msgid "Completed. Click OK to return to the main menu."
+msgstr "Completed. Click OK to return to the main menu."
+
+#: src/respin-gtk.py:174 src/respin-gtk.py:749
+msgid "Respin"
+msgstr "Respin"
+
+#: src/respin-gtk.py:176
+msgid "Krasimir S. Stefanov <lokiisyourmaster@gmail.com>"
+msgstr "Krasimir S. Stefanov <lokiisyourmaster@gmail.com>"
+
+#: src/respin-gtk.py:176
+msgid "Tony Brijeski <tb6517@yahoo.com>"
+msgstr "Tony Brijeski <tb6517@yahoo.com>"
+
+#: src/respin-gtk.py:179
+msgid "Bulgarian - Krasimir S. Stefanov <lokiisyourmaster@gmail.com>"
+msgstr "Bulgarian - Krasimir S. Stefanov <lokiisyourmaster@gmail.com>"
+
+#: src/respin-gtk.py:180
+msgid "English - Krasimir S. Stefanov <lokiisyourmaster@gmail.com>"
+msgstr "English - Krasimir S. Stefanov <lokiisyourmaster@gmail.com>"
+
+#: src/respin-gtk.py:185
+msgid ""
+"PyGTK GUI for Respin\n"
+"Copyright (C) 2011 Krasimir S. Stefanov, Tony Brijeski\n"
+"Licence: GPLv3.0\n"
+"http://www.gnu.org/licenses/."
+msgstr ""
+"PyGTK GUI for Respin\n"
+"Copyright (C) 2011 Krasimir S. Stefanov, Tony Brijeski\n"
+"Licence: GPLv3.0\n"
+"http://www.gnu.org/licenses/."
+
+#: src/respin-gtk.py:194
+msgid "Select working directory"
+msgstr "Select working directory"
+
+#: src/respin-gtk.py:208
+msgid "Select 640x480 PNG image..."
+msgstr "Select 640x480 PNG image..."
+
+#: src/respin-gtk.py:214 src/respin-gtk.py:402
+msgid "PNG Images"
+msgstr "PNG Images"
+
+#: src/respin-gtk.py:219 src/respin-gtk.py:407
+msgid "All files"
+msgstr "All files"
+
+#: src/respin-gtk.py:230
+#, python-format
+msgid ""
+"%s has been copied to /etc/respin/isolinux/splash.png becoming the "
+"default background for the LIVE menu."
+msgstr ""
+"%s has been copied to /etc/respin/isolinux/splash.png becoming the "
+"default background for the LIVE menu."
+
+#: src/respin-gtk.py:235
+msgid "Select image..."
+msgstr "Select image..."
+
+#: src/respin-gtk.py:262
+#, python-format
+msgid ""
+"%(filename)s has been copied to %(grub_bg)s and is the default background "
+"for grub. Click OK to update grub with the new settings so you can see your "
+"picture on the next boot."
+msgstr ""
+"%(filename)s has been copied to %(grub_bg)s and is the default background "
+"for grub. Click OK to update grub with the new settings so you can see your "
+"picture on the next boot."
+
+#: src/respin-gtk.py:274
+msgid "GRUB has been updated."
+msgstr "GRUB has been updated."
+
+#: src/respin-gtk.py:313
+msgid "User"
+msgstr "User"
+
+#: src/respin-gtk.py:314
+msgid "Home directory"
+msgstr "Home directory"
+
+#: src/respin-gtk.py:366
+msgid "Done! Now plymouth will use the default, auto-selected theme."
+msgstr "Done! Now plymouth will use the default, auto-selected theme."
+
+#: src/respin-gtk.py:370 src/respin-gtk.py:469
+msgid "Please, select a theme!"
+msgstr "Please, select a theme!"
+
+#: src/respin-gtk.py:379
+msgid ""
+"Enter your plymouth theme name. eg. Respin Theme (please use only "
+"alphanumeric characters)"
+msgstr ""
+"Enter your plymouth theme name. eg. Respin Theme (please use only "
+"alphanumeric characters)"
+
+#: src/respin-gtk.py:379
+msgid "Name:"
+msgstr "Name:"
+
+#: src/respin-gtk.py:383
+msgid "You must specify theme name!"
+msgstr "You must specify theme name!"
+
+#: src/respin-gtk.py:390
+#, python-format
+msgid "The theme \"%s\" already exists! Do you want to overwrite it?"
+msgstr "The theme \"%s\" already exists! Do you want to overwrite it?"
+
+#: src/respin-gtk.py:396
+msgid "Select 1920x1080 PNG image..."
+msgstr "Select 1920x1080 PNG image..."
+
+#: src/respin-gtk.py:442
+#, python-format
+msgid ""
+"Your plymouth theme named %(theme_name)s with the picture %(theme_pic)s has "
+"been created."
+msgstr ""
+"Your plymouth theme named %(theme_name)s with the picture %(theme_pic)s has "
+"been created."
+
+#: src/respin-gtk.py:450
+msgid ""
+"In order to be able to preview plymouth themes, you have to install plymouth-"
+"x11!"
+msgstr ""
+"In order to be able to preview plymouth themes, you have to install plymouth-"
+"x11!"
+
+#: src/respin-gtk.py:539
+msgid "Name"
+msgstr "Name"
+
+#: src/respin-gtk.py:540
+msgid "Directory"
+msgstr "Directory"
+
+#: src/respin-gtk.py:557
+msgid "Are you sure you want to delete the contents of /etc/skel?"
+msgstr "Are you sure you want to delete the contents of /etc/skel?"
+
+#: src/respin-gtk.py:755
+msgid "Enter your password to perform administrative tasks"
+msgstr "Enter your password to perform administrative tasks"
+
+#: src/respin-gtk.glade:9
+msgid "Respin-GTK"
+msgstr "Respin-GTK"
+
+#: src/respin-gtk.glade:33
+msgid "Backup"
+msgstr "Backup"
+
+#: src/respin-gtk.glade:49
+msgid "Dist"
+msgstr "Dist"
+
+#: src/respin-gtk.glade:66
+msgid "Distiso"
+msgstr "Distiso"
+
+#: src/respin-gtk.glade:86
+msgid "Backup complete system including user data"
+msgstr "Backup complete system including user data"
+
+#: src/respin-gtk.glade:100
+msgid ""
+"Make a Distributable copy to share with friends - both cdfs and iso will be "
+"created"
+msgstr ""
+"Make a Distributable copy to share with friends - both cdfs and iso will be "
+"created"
+
+#: src/respin-gtk.glade:116
+msgid ""
+"Make distributable iso file only - cd filesystem must have been completed "
+"already"
+msgstr ""
+"Make distributable iso file only - cd filesystem must have been completed "
+"already"
+
+#: src/respin-gtk.glade:150
+msgid "Remove temporary files"
+msgstr "Remove temporary files"
+
+#: src/respin-gtk.glade:163
+msgid "Distcdfs"
+msgstr "Distcdfs"
+
+#: src/respin-gtk.glade:183
+msgid ""
+"Make a Distributable copy filesystem only - good if you want to add files to "
+"the cd"
+msgstr ""
+"Make a Distributable copy filesystem only - good if you want to add files to "
+"the cd"
+
+#: src/respin-gtk.glade:207 src/respin-gtk.glade:238
+#: src/respin-gtk.glade:254 src/respin-gtk.glade:270
+msgid "Select"
+msgstr "Select"
+
+#: src/respin-gtk.glade:226
+msgid "Boot menu picture for the live cd (640x480 PNG)"
+msgstr "Boot menu picture for the live cd (640x480 PNG)"
+
+#: src/respin-gtk.glade:293
+msgid "Boot menu picture for the installed environment"
+msgstr "Boot menu picture for the installed environment"
+
+#: src/respin-gtk.glade:305
+msgid "Updating GRUB, please wait..."
+msgstr "Updating GRUB, please wait..."
+
+#: src/respin-gtk.glade:330
+msgid "User, whose current settings will be used as default"
+msgstr "User, whose current settings will be used as default"
+
+#: src/respin-gtk.glade:343
+msgid "Clear everything from /etc/skel"
+msgstr "Clear everything from /etc/skel"
+
+#: src/respin-gtk.glade:373
+msgid "Plymouth theme"
+msgstr "Plymouth theme"
+
+#: src/respin-gtk.glade:389
+msgid "Actions"
+msgstr "Actions"
+
+#: src/respin-gtk.glade:410
+msgid "Username"
+msgstr "Username"
+
+#: src/respin-gtk.glade:422
+msgid "CD Label"
+msgstr "CD Label"
+
+#: src/respin-gtk.glade:436
+msgid "Filename"
+msgstr "Filename"
+
+#: src/respin-gtk.glade:450
+msgid "Working directory"
+msgstr "Working directory"
+
+#: src/respin-gtk.glade:464
+msgid "Files to exclude"
+msgstr "Files to exclude"
+
+#: src/respin-gtk.glade:478
+msgid "URL for USB Creator"
+msgstr "URL for USB Creator"
+
+#: src/respin-gtk.glade:580
+msgid ""
+"<span color=\"red\">Working directory must be on a drive formatted with a "
+"linux filesystem. Respin will create the \"respin\" working folder "
+"in this folder and will not harm any other files or folders.</span>"
+msgstr ""
+"<span color=\"red\">Working directory must be on a drive formatted with a "
+"linux filesystem. Respin will create the \"respin\" working folder "
+"in this folder and will not harm any other files or folders.</span>"
+
+#: src/respin-gtk.glade:640
+msgid "Squashfs options"
+msgstr "Squashfs options"
+
+#: src/respin-gtk.glade:670
+msgid "Show install icon on Backup mode desktop"
+msgstr "Show install icon on Backup mode desktop"
+
+#: src/respin-gtk.glade:693
+msgid "Settings"
+msgstr "Settings"
+
+#: src/respin-gtk.glade:717
+msgid "Output"
+msgstr "Output"
+
+#: src/respin-gtk.glade:783
+msgid "Default settings"
+msgstr "Default settings"
+
+#: src/respin-gtk.glade:796
+msgid "Select the user, whose settings to be used as default:"
+msgstr "Select the user, whose settings to be used as default:"
+
+#: src/respin-gtk.glade:820
+msgid ""
+"<span color=\"red\">WARNING: make sure you chose user with a SMALL home "
+"directory, not some with gigabytes of data!\n"
+"Even so, you must manually check the contents of /etc/skel afterwards, and "
+"make sure it does not contain sensitive information (especially in the "
+"hidden folders)!</span>"
+msgstr ""
+"<span color=\"red\">WARNING: make sure you chose user with a SMALL home "
+"directory, not some with gigabytes of data!\n"
+"Even so, you must manually check the contents of /etc/skel afterwards, and "
+"make sure it does not contain sensitive information (especially in the "
+"hidden folders)!</span>"
+
+#: src/respin-gtk.glade:835
+msgid "Copying files, please wait..."
+msgstr "Copying files, please wait..."
+
+#: src/respin-gtk.glade:904
+msgid "Select plymouth theme"
+msgstr "Select plymouth theme"
+
+#: src/respin-gtk.glade:917
+msgid "Available plymouth themes:"
+msgstr "Available plymouth themes:"
+
+#: src/respin-gtk.glade:939
+msgid "Automatic selection"
+msgstr "Automatic selection"
+
+#: src/respin-gtk.glade:943
+msgid ""
+"Auto-select the plymouth theme, based on the update-alternatives information"
+msgstr ""
+"Auto-select the plymouth theme, based on the update-alternatives information"
+
+#: src/respin-gtk.glade:957
+msgid "Updating initramfs, please wait..."
+msgstr "Updating initramfs, please wait..."
+
+#: src/respin-gtk.glade:988
+msgid "Use the currently selected plymouth theme"
+msgstr "Use the currently selected plymouth theme"
+
+#: src/respin-gtk.glade:1001
+msgid "Create"
+msgstr "Create"
+
+#: src/respin-gtk.glade:1005
+msgid "Create a simple static plymouth theme"
+msgstr "Create a simple static plymouth theme"
+
+#: src/respin-gtk.glade:1017
+msgid "Preview"
+msgstr "Preview"
+
+#: src/respin-gtk.glade:1021
+msgid "Preview the currently selected plymouth theme"
+msgstr "Preview the currently selected plymouth theme"
