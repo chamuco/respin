@@ -1,0 +1,11 @@
+Package: respin-deb
+Version: 1.0.0-1
+Section: Desktop
+Priority: optional
+Architecture: all
+Depends: coreutils, dialog, memtest86+, mkisofs | genisoimage, findutils, grub-pc, xorriso|syslinux, os-prober, bash, passwd, sed, squashfs-tools, live-boot, live-config, live-config-sysvinit, live-boot-initramfs-tools, rsync, mount, laptop-detect, util-linux, hwdata
+Suggests: respin-gui
+Maintainer: Respin Team <aicra@linuxrespin.org>
+Description: Debian system respin  This script creates a livecd of the installed system. You can either make a distributable livecd or backup of your system. If you want the gui frontend install respin-gui as well. For more information, please visit http://www.linuxrespin.org
+Installed-size: 759
+Homepage: http://www.linuxrespin.org/
