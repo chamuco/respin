@@ -1,7 +1,0 @@
-respin-gtk (3.0.4-1) unstable; urgency=low
-
-      * 3.0.2-1
-      *   
-      * First release of the gui now split off from the cli portion
-
- -- Marcia Wilbur <aicra@faqlinux.com>  Fri, 06 Apr 2012 02:33:53 -0500
