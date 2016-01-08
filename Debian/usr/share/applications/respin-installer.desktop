@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Respin Installer
+Name[uk]=Respin Installer (встановлювач ОС)
+GenericName=System Installer
+Exec=respin-installer
+Icon=system-run
+Terminal=true
+Type=Application
+Categories=System;Settings;
+GenericName[en_CA]=System Installer
+NotShowIn=KDE;
