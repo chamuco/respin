@@ -1,0 +1,114 @@
+#!/bin/bash
+# respin distributive to iso script to make an installable livecd/dvd
+# from a Debian installed and customized system
+#
+#
+#  Created by Sergiy Gorichenko, Kyiv, Ukraine, http://sgg.im
+#  Originally Created January 07th, 2016
+#
+#  1. Checks if username is correct for copying to skel
+#  2. Sets user with sid = 1000 to skel with respin-skelcopy if username is incorrect
+#  3. Makes the ISO distributive and places the respin-installer icon to the Desktop of Live user
+#
+#
+#
+
+# checking to make sure script is running with root privileges
+. /etc/respin/respin.version
+echo "Respin $RESPINVERSION"
+
+testroot="`whoami`"
+
+if [ "$testroot" != "root" ]; then
+    echo "$0 must be run with root privileges."
+    echo
+    exit 1
+fi
+
+
+echo 
+
+SKELUSER="$1"
+
+if [ "$SKELUSER" != "" ]; then
+    echo "Let's check if user [$SKELUSER] exists in our system"
+    echo "Grepping the /etc/passwd file..."
+    echo 
+    tmpuser=`grep '^[^:]*:[^:]*:' /etc/passwd | awk -F ":" '{ print $1 }' | grep "$SKELUSER"`
+    if  [ $tmpuser = $SKELUSER ]; then
+	echo "Great! Username [$SKELUSER] is useful for copying."
+    else
+	echo
+	echo "Oops!.. Provided username [$SKELUSER] is not useful for copying."
+	SKELUSER=""
+    fi
+    echo 
+fi
+
+
+if [ "$SKELUSER" = "" ]; then
+    echo "Usage is: respin-bak-iso username"
+    echo "Where username is a valid user on the system"
+    echo 
+    echo "If no username provided or username is not correct we'll use the username with ID=1000..."
+    echo 
+    SKELUSER=`grep '^[^:]*:[^:]*:1000:' /etc/passwd | awk -F ":" '{ print $1 }'`
+    echo "So, the user profile we'll use is [$SKELUSER]..."
+    echo "Ok, let's do it!"
+    echo 
+fi
+
+
+
+# load the respin.conf file 
+
+. /etc/respin.conf
+
+# if the respin.conf file is incorrect or missing, make sure to set defaults
+
+if [ "$WORKDIR" = "" ]; then
+WORKDIR="/home/respin/respin"
+BASEWORKDIR="/home/respin"
+else
+BASEWORKDIR="$WORKDIR"
+WORKDIR="$WORKDIR/respin"
+fi
+
+# running the skel copier
+echo "Running the skel profile creator from user profile [$SKELUSER]..."
+echo 
+echo respin-skelcopy $SKELUSER
+
+
+# copy Installer to skel Desktop
+if [ ! -d "$WORKDIR/dummysys/etc/skel/Desktop/"]; then
+    mkdir $WORKDIR/dummysys/etc/skel/Desktop/
+fi
+cp /usr/share/applications/respin-installer*.desktop $WORKDIR/dummysys/etc/skel/Desktop/
+chmod +x $WORKDIR/dummysys/etc/skel/Desktop/respin-installer*.desktop
+##
+
+if [ "$ISONAME" = "" ]; then
+    echo
+    echo "You can write constant part of iso-name in a variable ISONAME in the [/etc/respin.conf] file."
+    echo "i.e. at the end of file [/etc/respin.conf] add:"
+    echo "ISONAME=\"MyDebian-backup\""
+    echo 
+    echo "Ok, we'll use the default name \"MyBackup\""
+    ISONAME="MyBackup"
+fi
+
+echo
+echo "Adding the time stamp to the end of ISONAME [$ISONAME]..."
+DATE=`date +%Y%m%d%H%M`
+echo "Timestamp = $DATE"
+echo 
+ISOFILE="$ISONAME-$DATE.iso"
+
+echo "Final filename will be [$ISOFILE]"
+echo
+echo "Let's start!"
+echo
+
+respin dist $ISOFILE
+
