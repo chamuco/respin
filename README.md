@@ -11,4 +11,9 @@ Ubuntu Print 10.10
 
 Support for additional distros soon to come.
 
+Current Known Issues:
+
+- Image size limit of 4gb
+- Not compatible with MDM at this time
+
 Fork from http://www.remastersys.com
