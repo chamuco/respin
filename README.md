@@ -1,9 +1,6 @@
 # respin
 Tool to backup and clone Ubuntu or Debian distros
 
-respin
-Respin Tool for Backing Up and Cloning Your Ubuntu System
-
 Confirmed to work on the following distros:
 
 Ubuntu 10.04 - 32/64 bit Ubuntu 10.04 - 32/64 bit CLI Server Ubuntu 12.04 - 32 bit Ubuntu 14.04 - 32/64 bit (with the Macbuntu desktop environment) Xubuntu 14.04 - 32/64 bit
