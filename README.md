@@ -1,5 +1,5 @@
-# respin
-respin is a fork of "Remastersys" originally written by Tony Brijeski (aka Fragadelic). With respin you are able to make backups of your current distro or create a new live CD.
+# respins
+respins is a fork of "Remastersys" originally written by Tony Brijeski (aka Fragadelic). With respins you are able to make backups of your current distro or create a new live CD.
 
 Packages can be installed using apt-get on Ubuntu and Mint based systems. 
 
@@ -37,3 +37,5 @@ Current Known Issues:
 Fork from http://www.remastersys.com
 
 Visit us at http://www.respins.org 
+
+Launchpad https://launchpad.net/~respin-team
