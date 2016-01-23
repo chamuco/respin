@@ -1,5 +1,19 @@
 # respin
-Tool to backup and clone Ubuntu or Debian distros
+respin is a fork of "Remastersys" originally written by Tony Brijeski (aka Fragadelic). With respin you are able to make backups of your current distro or create a new live CD.
+
+Packages can be installed using apt-get on Ubuntu and Mint based systems. 
+
+To install cli version using apt-get:
+
+sudo apt-add-repository ppa:respin-team/respin
+
+sudo apt-get install respins
+
+To install GTK version using apt-get:
+
+sudo apt-add-repository ppa:respin-team/respin-gtk
+
+sudo apt-get install respins-gtk
 
 Confirmed to work on the following distros:
 
