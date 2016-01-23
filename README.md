@@ -7,11 +7,15 @@ To install cli version using apt-get:
 
 sudo apt-add-repository ppa:respin-team/respin
 
+sudo apt-get update
+
 sudo apt-get install respins
 
 To install GTK version using apt-get:
 
 sudo apt-add-repository ppa:respin-team/respin-gtk
+
+sudo apt-get update
 
 sudo apt-get install respins-gtk
 
