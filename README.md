@@ -11,6 +11,8 @@ sudo apt-get update
 
 sudo apt-get install respins
 
+sudo respins
+
 To install GTK version using apt-get:
 
 sudo apt-add-repository ppa:respin-team/respin-gtk
@@ -18,6 +20,8 @@ sudo apt-add-repository ppa:respin-team/respin-gtk
 sudo apt-get update
 
 sudo apt-get install respins-gtk
+
+sudo respins-gtk
 
 Confirmed to work on the following distros:
 
@@ -33,8 +37,6 @@ Current Known Issues:
 
 - Image size limit of 4gb
 - Not compatible with MDM at this time
-
-Fork from http://www.remastersys.com
 
 Visit us at http://www.respins.org 
 
