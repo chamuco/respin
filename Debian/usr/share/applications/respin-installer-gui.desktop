@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Respin Installer GUI
+Name[uk]=Respin Installer GUI (встановлювач ОС із GUI)
+GenericName=System Installer
+Exec=respin-installer gui
+Icon=file-roller
+Terminal=false
+Type=Application
+Categories=System;Settings;
+GenericName[en_CA]=System Installer
+NotShowIn=KDE;
